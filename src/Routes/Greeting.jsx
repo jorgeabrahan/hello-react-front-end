@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchRandomGreeting } from '../redux/greeting/greetingSlice';
+import { fetchRandomGreeting } from '../redux/greeting/greetingSlice.js';
 
 const isObjEmpty = (object) => Object.keys(object).length === 0 && object.constructor === Object;
 
