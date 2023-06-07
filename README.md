@@ -27,6 +27,18 @@
 
 **Hello react app** displays a random greeting fetched from a rails API.
 
+## Project views
+
+**In order for it to work, the [rails backend API](https://github.com/jorgeabrahan/hello-rails-back-end) should be running**
+
+First random greeting:
+
+![First random greeting](./repo_images/display-random-greeting.png)
+
+Second random greeting:
+
+![Second random greeting](./repo_images/display-random-greeting-two.png)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
