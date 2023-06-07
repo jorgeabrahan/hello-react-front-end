@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchRandomGreeting } from '../redux/greeting/greetingSlice.js';
+import { fetchRandomGreeting } from '../redux/greeting/greetingSlice';
 
 const isObjEmpty = (object) => Object.keys(object).length === 0 && object.constructor === Object;
 
@@ -13,7 +13,7 @@ export default function Greeting() {
     dispatch(fetchRandomGreeting());
   }, [dispatch]);
 
-  let display = 'Loading...';
+  let display;
   switch (status) {
     case 'fulfilled':
       if (isObjEmpty(greeting)) {
@@ -26,7 +26,7 @@ export default function Greeting() {
       display = error;
       break;
     default:
-      display = '';
+      display = 'Loading...';
   }
 
   return <h1>{display}</h1>;
