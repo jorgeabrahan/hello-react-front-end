@@ -1,5 +1,5 @@
-function App() {
+import React from 'react';
+
+export function App() {
   return <p>App component</p>;
 }
-
-export default App;
