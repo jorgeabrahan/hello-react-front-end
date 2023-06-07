@@ -1,5 +1,5 @@
 import React from 'react';
 
 export function App() {
-  return <p>App component</p>;
+  return <h1>App component</h1>;
 }
