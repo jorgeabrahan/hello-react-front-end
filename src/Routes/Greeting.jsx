@@ -4,7 +4,7 @@ import { fetchRandomGreeting } from '../redux/greeting/greetingSlice';
 
 const isObjEmpty = (object) => Object.keys(object).length === 0 && object.constructor === Object;
 
-export function Greeting() {
+export default function Greeting() {
   const dispatch = useDispatch();
   const { greeting, status, error } = useSelector((store) => store.greeting);
 
@@ -24,6 +24,9 @@ export function Greeting() {
       break;
     case 'rejected':
       display = error;
+      break;
+    default:
+      display = '';
   }
 
   return <h1>{display}</h1>;

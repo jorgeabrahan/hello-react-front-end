@@ -1,9 +1,10 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { store } from './Redux/store';
 import { Provider } from 'react-redux';
-import { App, Greeting } from './Routes';
+import store from './Redux/store';
+import App from './Routes/App';
+import Greeting from './Routes/Greeting';
 import './index.css';
 
 const router = createBrowserRouter([
