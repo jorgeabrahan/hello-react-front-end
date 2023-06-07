@@ -1,5 +1,5 @@
 function App() {
-  return <p>App component</p>
+  return <p>App component</p>;
 }
 
-export default App
+export default App;
