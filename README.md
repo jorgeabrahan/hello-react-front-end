@@ -27,6 +27,8 @@
 
 **Hello react app** displays a random greeting fetched from a rails API.
 
+[Rails backend app link](https://github.com/jorgeabrahan/hello-rails-back-end)
+
 ## Project views
 
 **In order for it to work, the [rails backend API](https://github.com/jorgeabrahan/hello-rails-back-end) should be running**
